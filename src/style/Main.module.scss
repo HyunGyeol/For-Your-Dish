@@ -1,4 +1,39 @@
 .wrap {
-    background: black;
+    height: 100%;
     border: 1px solid black;
+
+    .intro {
+        width: 60vw;
+        height: 30vh;
+        border: 1px solid red;
+        margin: 0 auto;
+        padding: 3%;
+    }
+
+    .buttonWrap {
+        display: flex;
+        width: fit-content;
+        height: 6vh;
+        border: 1px solid blue;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        * {
+            width: 100px;
+            margin: 2px;
+        }
+    }
+
+    .list {
+        height: 40vh;
+        display: flex;
+        .listItem {
+            border: 1px solid black;
+            width: 10vw;
+            height: 20vh;
+            margin: 3px;
+        }
+    }
 }
+
