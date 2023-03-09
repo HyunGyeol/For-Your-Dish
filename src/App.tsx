@@ -1,7 +1,7 @@
 import Main from 'pages/Main';
 import Header from 'components/Header';
-import MyPage from 'pages/MyPage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import LoginPage from 'pages/Login';
 
 function App() {
   return (
@@ -10,10 +10,9 @@ function App() {
         <Header />
         <Routes>
           <Route path={'/'} element={<Main />}></Route>
-          <Route path={'/mypage'} element={<MyPage />}></Route>
+          <Route path={'/mypage'} element={<LoginPage />}></Route>
         </Routes>
       </BrowserRouter>
-      <Main />
     </div>
   );
 }
